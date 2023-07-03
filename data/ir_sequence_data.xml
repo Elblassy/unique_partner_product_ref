@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="seq_res_partner_ref" model="ir.sequence">
+        <field name="name">Ref contact</field>
+        <field name="code">res.partner.ref</field>
+        <field name="padding">5</field>
+        <field name="company_id" eval="False"/>
+    </record>
+
+    <record id="seq_res_product_barcode" model="ir.sequence">
+        <field name="name">Product Barcode</field>
+        <field name="code">product.template.barcode</field>
+        <field name="padding">5</field>
+        <field name="company_id" eval="False"/>
+    </record>
+</odoo>

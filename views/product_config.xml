@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sales_config_inherit" model="ir.ui.view">
+        <field name="name">>res.config.settings.sales.inherit</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="sale.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='group_stock_packaging']" position="after">
+                <div class="o_setting_left_pane">
+                    <div class="mt64">
+                        <button name="generate_barcode_default_code" type="object"
+                                string="Generate Barcode and Ref for only not generated"
+                                class="btn-primary"/>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
